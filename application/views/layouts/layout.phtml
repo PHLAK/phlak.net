@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+
+<head>
+	<title><?= $this->title; ?> | Gaming Sofa</title>
+	<link rel="shortcut icon" href="/images/icons/favicon.png" />
+
+	<link rel="stylesheet" type="text/css" href="/css/rebase.css" />
+	<link rel="stylesheet" type="text/css" href="/css/structure.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<? if($this->css): ?>
+		<link rel="stylesheet" type="text/css" href="<?= $this->css; ?>" />
+	<? endif; ?>
+
+	<meta name="keywords" content="Gaming Sofa, Left 4 Dead, Left 4 Dead 2, Steam" />
+</head>
+
+<body>
+
+
+<div id="wrap">
+	<div id="main" class="clearfix">
+
+		<div id="header">
+			<h1 id="title"><a href="/"><span class="green">Gaming</span> Sofa</a></h1>
+			<ul id="navigation">
+				<li><a href="#">Server Info</a></li>
+				<li><a href="#">Members</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Image Gallery</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<h2 id="page-title"><?= $this->title; ?></h2>
+			<?= $this->layout()->content; ?>
+		</div>
+
+		<a href="#" id="fork-me"><img src="/images/forkme.png" /></a>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="left">Copyright &copy; <?= date('Y'); ?> &bull; Gaming Sofa &bull; Some Rights Reserved</div>
+	<div class="right">Design by, <a href="http://www.chriskankiewicz.com">Chris Kankiewicz</a></div>
+</div>
+
+
+</body>
+</html>

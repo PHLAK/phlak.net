@@ -1,0 +1,126 @@
+/* ---------------------------------------- */
+/* -----| GENERAL |------------------------ */
+/* ---------------------------------------- */
+
+html {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #161616;
+	color: #EEE;
+	font-family: monospace !important;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #9C3;
+	outline: none;
+}
+
+a:hover {
+	/* color: #333; */
+}
+
+
+/* ---------------------------------------- */
+/* -----| HEADER / NAVIGATION |------------ */
+/* ---------------------------------------- */
+
+#header {
+	background-color: #363636;
+}
+
+#title {
+	float: left;	
+	font-size: 1.75em !important;
+	font-weight: bold !important;
+	margin: 0;
+}
+
+#title a {
+	color: #EEE;
+	display: block;
+	font-family: monospace !important;
+	padding: 6px 10px !important;
+	text-decoration: none;
+}
+
+#title a:hover {
+	background-color: transparent !important;
+	color: #EEE !important;
+}
+
+
+#navigation {
+	border-left: 1px solid #161616;
+	display: inline-block;
+	margin: 0;
+}
+
+#navigation li {
+	display: inline-block;
+	float: left;
+}
+
+#navigation li a {
+	border-right: 1px solid #161616;
+	color: #EEE;
+	display: block;
+	font-size: 1.2em;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+#navigation li a:hover {
+	background-color: #9C3;
+	color: #222;
+}
+
+
+/* ---------------------------------------- */
+/* -----| CONTENT |------------------------ */
+/* ---------------------------------------- */
+
+#page-title {
+	color: #9C3;
+}
+
+#content {
+	padding: 10px;
+}
+
+
+/* ---------------------------------------- */
+/* -----| FOOTER |------------------------- */
+/* ---------------------------------------- */
+
+#footer {
+	background-color: #363636;
+	font-size: .9em;
+}
+
+#footer .left, #footer .right {
+	margin: 11px;
+}
+
+
+/* ---------------------------------------- */
+/* -----| MISCELLANEOUS |------------------ */
+/* ---------------------------------------- */
+
+.green {
+	color: #9C3;
+}
+
+#fork-me {
+	right: -10px;
+	position: absolute;
+	top: -10px;
+}
+	
+	
