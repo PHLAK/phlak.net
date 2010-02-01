@@ -1,4 +1,14 @@
 /* ---------------------------------------- */
+/* -----| GENERAL |------------------------ */
+/* ---------------------------------------- */
+
+#wrap {
+	min-width: 960px;
+	position: relative;
+}
+
+
+/* ---------------------------------------- */
 /* -----| FOOTER |------------------------- */
 /* ---------------------------------------- */
 
@@ -13,6 +23,7 @@ body > #wrap {height: auto; min-height: 100%;}
 #footer {
 	position: relative;
 	margin-top: -38px;			/* negative value of footer height */
+	min-width: 960px;
 	height: 38px;
 	clear:both;
 }
