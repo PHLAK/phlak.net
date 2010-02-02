@@ -95,9 +95,9 @@ a:hover {
 }
 
 #gaming-sofa {
-	border: 1px solid #555;
-	outline: 4px solid #646464;
-	margin: 4px;
+	background-color: #555;
+	border: 4px solid #646464;
+	padding: 1px;
 }
 
 
