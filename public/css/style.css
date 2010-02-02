@@ -94,6 +94,12 @@ a:hover {
 	padding: 10px;
 }
 
+#gaming-sofa {
+	border: 1px solid #555;
+	outline: 4px solid #646464;
+	margin: 4px;
+}
+
 
 /* ---------------------------------------- */
 /* -----| FOOTER |------------------------- */
