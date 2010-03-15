@@ -1,6 +1,6 @@
 <?php
 
-class ServerInfoController extends Zend_Controller_Action
+class IpController extends Zend_Controller_Action
 {
 
     public function init()
@@ -10,7 +10,7 @@ class ServerInfoController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $this->view->title = 'Server Info';
+        $this->view->title = 'External IP';
     }
 
 

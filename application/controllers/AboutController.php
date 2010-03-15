@@ -1,6 +1,6 @@
 <?php
 
-class BlogController extends Zend_Controller_Action
+class AboutController extends Zend_Controller_Action
 {
 
     public function init()
@@ -10,7 +10,7 @@ class BlogController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $this->view->title = 'Blog';
+        $this->view->title = 'About';
     }
 
 

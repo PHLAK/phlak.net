@@ -36,7 +36,7 @@ a:hover {
 }
 
 #title {
-	float: left;	
+	float: left;
 	font-size: 1.75em !important;
 	font-weight: bold !important;
 	margin: 0;
@@ -45,7 +45,8 @@ a:hover {
 #title a {
 	color: #EEE;
 	display: block;
-	font-family: monospace !important;
+	font-family: sans-serif, monospace !important;
+	font-weight: normal;
 	padding: 6px 10px !important;
 	text-decoration: none;
 }
@@ -88,6 +89,7 @@ a:hover {
 
 #page-title {
 	color: #9C3;
+	font-size: 1.25em;
 }
 
 #content {

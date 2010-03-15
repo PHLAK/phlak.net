@@ -1,6 +1,6 @@
 <?php
 
-class MembersController extends Zend_Controller_Action
+class ScriptsController extends Zend_Controller_Action
 {
 
     public function init()
@@ -10,7 +10,7 @@ class MembersController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $this->view->title = 'Members';
+        $this->view->title = 'Scripts';
     }
 
 

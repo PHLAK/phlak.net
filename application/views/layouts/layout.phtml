@@ -2,17 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 
 <head>
-	<title><?= $this->title; ?> | Gaming Sofa</title>
+	<title><?= $this->title; ?> | PHLAKNET</title>
 	<link rel="shortcut icon" href="/images/icons/favicon.png" />
 
-	<link rel="stylesheet" type="text/css" href="/css/rebase.css" />
 	<link rel="stylesheet" type="text/css" href="/css/structure.css" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<? if($this->css): ?>
 		<link rel="stylesheet" type="text/css" href="<?= $this->css; ?>" />
 	<? endif; ?>
 
-	<meta name="keywords" content="Gaming Sofa, Left 4 Dead, Left 4 Dead 2, Steam" />
+	<meta name="keywords" content="PHLAK, PHLAKNET, Chris Kankiewicz, Hacking, Code" />
 </head>
 
 <body>
@@ -22,27 +21,27 @@
 	<div id="main" class="clearfix">
 
 		<div id="header">
-			<h1 id="title"><a href="/">Gaming<span class="green">Sofa</span></a></h1>
+			<div id="title"><a href="/"><span class="green">PHLAK</span>NET</a></div>
 			<ul id="navigation">
-				<li><a href="/server-info">Server Info</a></li>
-				<li><a href="/members">Members</a></li>
-				<li><a href="/blog">Blog</a></li>
+				<li><a href="/scripts">Scripts</a></li>
+				<li><a href="/ip">External IP</a></li>
 				<li><a href="/image-gallery">Image Gallery</a></li>
+				<li><a href="/about">About</a></li>
 				<li><a href="/contact-us">Contact Us</a></li>
 			</ul>
 		</div>
-		
+
 		<div id="content">
-			<h2 id="page-title"><?= $this->title; ?></h2>
+			<h1 id="page-title"><?= $this->title; ?></h1>
 			<?= $this->layout()->content; ?>
 		</div>
 
-		<a href="http://github.com/PHLAK/gamingsofa.com" id="fork-me"><img src="/images/forkme.png" /></a>
+		<a href="http://github.com/PHLAK/phlak.net" id="fork-me"><img src="/images/forkme.png" /></a>
 	</div>
 </div>
 
 <div id="footer">
-	<div class="left">Copyright &copy; <?= date('Y'); ?> &bull; Gaming Sofa &bull; Some Rights Reserved</div>
+	<div class="left">Copyright &copy; <?= date('Y'); ?> &bull; PHLAKNET &bull; Some Rights Reserved</div>
 	<div class="right">Design by, <a href="http://www.chriskankiewicz.com">Chris Kankiewicz</a></div>
 </div>
 
