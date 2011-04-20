@@ -26,6 +26,11 @@ a:hover {
 	/* color: #333; */
 }
 
+#wrap {
+    min-width: 960px;
+    position: relative;
+}
+
 
 /* ---------------------------------------- */
 /* -----| HEADER / NAVIGATION |------------ */
@@ -107,12 +112,29 @@ a:hover {
 /* -----| FOOTER |------------------------- */
 /* ---------------------------------------- */
 
+
+* {margin:0;padding:0;}
+html, body, #wrap {height: 100%;}
+body > #wrap {height: auto; min-height: 100%;}
+
+#main {
+    padding-bottom: 38px;       /* must be same height as the footer */
+}
+
+#footer {
+    position: relative;
+    margin-top: -38px;          /* negative value of footer height */
+    min-width: 960px;
+    height: 38px;
+    clear:both;
+}
+
 #footer {
 	background-color: #363636;
 	font-size: .9em;
 }
 
-#footer .left, #footer .right {
+#footer .floatLeft, #footer .floatRight {
 	margin: 11px;
 }
 
