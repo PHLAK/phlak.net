@@ -48,7 +48,7 @@ a:hover {
 	font-size: 1.75em;
 	font-family: sans-serif, monospace !important;
 	font-weight: normal;
-	margin: 6px 0;
+	margin: 5px 0;
 	padding: 6px 10px !important;
 	text-decoration: none;
 }
@@ -76,8 +76,9 @@ a:hover {
     background-color: #272727;
 	color: #EEE;
 	display: block;
-	font-size: 1.2em;
-	padding: 8px 12px;
+	font-size: 1.1em;
+	letter-spacing: .5px;
+	padding: 6px 12px;
 	text-decoration: none;
 }
 
