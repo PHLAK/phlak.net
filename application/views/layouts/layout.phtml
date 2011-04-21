@@ -23,9 +23,9 @@
 		<div id="header">
 			<a href="/" id="title"><span class="green">PHLAK</span>NET</a>
 			<ul id="navigation">
-				<li class="currentPage"><a href="/">Home</a></li>
-				<li><a href="/tools">Tools</a></li>
-				<li><a href="/image-gallery">Image Gallery</a></li>
+				<li <?= $this->tab == 'home' ? 'class="currentPage"' : false ?>><a href="/">Home</a></li>
+				<li <?= $this->tab == 'tools' ? 'class="currentPage"' : false ?>><a href="/tools">Tools</a></li>
+				<li <?= $this->tab == 'gallery' ? 'class="currentPage"' : false ?>><a href="/image-gallery">Image Gallery</a></li>
 			</ul>
 		</div>
 
