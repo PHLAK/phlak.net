@@ -73,7 +73,7 @@ a:hover {
 }
 
 #navigation li a {
-    background-color: #272727;
+    background-color: #212121;
 	color: #EEE;
 	display: block;
 	font-size: 1.1em;
@@ -83,7 +83,7 @@ a:hover {
 }
 
 #navigation li a:hover {
-	background-color: #212121;
+	background-color: #121212;
 }
 
 #navigation li.currentPage a {
