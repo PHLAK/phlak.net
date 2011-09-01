@@ -58,7 +58,6 @@ a:hover {
 	color: #EEE !important;
 }
 
-
 #navigation {
 	bottom: 0;
 	display: inline-block;
@@ -89,6 +88,30 @@ a:hover {
 #navigation li.currentPage a {
 	background-color: #9C3;
 	color: #222;
+}
+
+#subNav {
+    margin: 0;
+    background-color: #9C3;
+    border-bottom: 3px solid #9C3;
+}
+
+#subNav li {
+    display: inline-block;
+    float: left;
+    margin-left: 8px;
+}
+
+#subNav li a {
+    color: #222;
+    display: block;
+    font-size: .8em;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+#subNav li a:hover {
+    text-decoration: underline;
 }
 
 

@@ -2,45 +2,63 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 
 <head>
-	<title><?= $this->title; ?> | PHLAKNET</title>
-	<link rel="shortcut icon" href="/images/icons/favicon.png" />
+    <title><?= $this->title; ?> | PHLAKNET</title>
+    <link rel="shortcut icon" href="/images/icons/favicon.png" />
 
-	<link rel="stylesheet" type="text/css" href="/css/rebase-min.css" />
-	<link rel="stylesheet" type="text/css" href="/css/style.css" />
-	<? if($this->css): ?>
-		<link rel="stylesheet" type="text/css" href="<?= $this->css; ?>" />
-	<? endif; ?>
+    <link rel="stylesheet" type="text/css" href="/css/rebase-min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <? if($this->css): ?>
+        <link rel="stylesheet" type="text/css" href="<?= $this->css; ?>" />
+    <? endif; ?>
 
-	<meta name="keywords" content="PHLAK, PHLAKNET, Chris Kankiewicz, Hacking, Code" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    <meta name="keywords" content="PHLAK, PHLAKNET, Chris Kankiewicz, Hacking, Code" />
 </head>
 
 <body>
 
 
 <div id="wrap">
-	<div id="main" class="clearfix">
+    <div id="main" class="clearfix">
 
-		<div id="header">
-			<a href="/" id="title"><span class="green">PHLAK</span>NET</a>
-			<ul id="navigation">
-				<li <?= $this->tab == 'home' ? 'class="currentPage"' : false ?>><a href="/">Home</a></li>
-				<li <?= $this->tab == 'tools' ? 'class="currentPage"' : false ?>><a href="/tools">Tools</a></li>
-				<li <?= $this->tab == 'gallery' ? 'class="currentPage"' : false ?>><a href="/image-gallery">Image Gallery</a></li>
-			</ul>
-		</div>
+        <div id="header">
+            
+            <a href="/" id="title"><span class="green">PHLAK</span>NET</a>
+            
+            <ul id="navigation">
+                <li <?= $this->tab == 'home' ? 'class="currentPage"' : false ?>><a href="/">Home</a></li>
+                <li <?= $this->tab == 'tools' ? 'class="currentPage"' : false ?>><a href="/tools">Tools</a></li>
+                <li <?= $this->tab == 'gallery' ? 'class="currentPage"' : false ?>><a href="/image-gallery">Image Gallery</a></li>
+            </ul>
+            
+        </div>
+            
+        <? if(is_array($this->subMenu)): ?>
+            <ul id="subNav" class="clearfix">
+                <? foreach($this->subMenu as $item): ?>
+                    <li><a href="<?= $item['link']; ?>"><?= $item['title']; ?></a></li>
+                <? endforeach; ?>
+            </ul>    
+        <? endif; ?>
+        
 
-		<div id="content">
-			<h1 id="page-title"><?= $this->title; ?></h1>
-			<?= $this->layout()->content; ?>
-		</div>
+        <div id="content">
+            
+            <h1 id="page-title"><?= $this->title; ?></h1>
+            
+            <?= $this->layout()->content; ?>
+            
+        </div>
 
-		<a href="http://github.com/PHLAK/phlak.net" id="fork-me"><img src="/images/forkme.png" /></a>
-	</div>
+        <a href="http://github.com/PHLAK/phlak.net" id="fork-me"><img src="/images/forkme.png" /></a>
+        
+    </div>
 </div>
 
 <div id="footer">
-	<div class="floatLeft">Just what do you think you're doing, Dave? </div>
-	<div class="floatRight">&copy; <?= date('Y'); ?> <a href="http://www.chriskankiewicz.com">Chris Kankiewicz</a></div>
+    <div class="floatLeft">Just what do you think you're doing, Dave? </div>
+    <div class="floatRight">&copy; <?= date('Y'); ?> <a href="http://www.chriskankiewicz.com">Chris Kankiewicz</a></div>
 </div>
 
 
