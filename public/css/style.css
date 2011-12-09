@@ -1,181 +1,25 @@
-/* ---------------------------------------- */
-/* -----| GENERAL |------------------------ */
-/* ---------------------------------------- */
-
-html {
-    font-size: 100%;
-    margin: 0;
-	padding: 0;
-}
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 body {
-	background-color: #161616;
-	color: #EEE;
-	font-size: 1em;
-	font-family: monospace, monospace;
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	color: #9C3;
-	outline: none;
-}
-
-a:hover {
-	/* color: #333; */
-}
-
-#wrap {
-    min-width: 960px;
-    position: relative;
+    padding-top: 60px;
 }
 
 
-/* ---------------------------------------- */
-/* -----| HEADER / NAVIGATION |------------ */
-/* ---------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -----| FOOTER |----------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
-#header {
-	background-color: #363636;
-	border-bottom: 3px solid #9C3;
-	position: relative;
-}
-
-#title {
-	display: inline-block;
-	font-size: 1.4em;
-	font-family: Helvetica, Arial, Tahoma, Verdana, sans-serif;
-	font-weight: normal;
-	margin: 5px 0;
-}
-
-#title a {
-    color: #EEE;
-    display: block;
-	padding: 6px 10px;
-	text-decoration: none;
-}
-
-#navigation {
-	bottom: 0;
-	display: inline-block;
-	font-size: .8em;
-	left: 140px;
-	margin: 0;
-	position: absolute;
-}
-
-#navigation li {
-	display: inline-block;
-	float: left;
-	margin-right: 8px;
-}
-
-#navigation li a {
-    background-color: #212121;
-	color: #EEE;
-	display: block;
-	font-size: 1.1em;
-	letter-spacing: .5px;
-	padding: 6px 12px;
-	text-decoration: none;
-}
-
-#navigation li a:hover {
-	background-color: #121212;
-}
-
-#navigation li.currentPage a {
-	background-color: #9C3;
-	color: #222;
-}
-
-#subNav {
-    margin: 0;
-    background-color: #9C3;
-    border-bottom: 3px solid #9C3;
-}
-
-#subNav li {
-    display: inline-block;
-    float: left;
-    margin-left: 8px;
-}
-
-#subNav li a {
-    color: #222;
-    display: block;
-    font-size: .7em;
-    padding: 6px 8px;
-    text-decoration: none;
-}
-
-#subNav li a:hover {
-    text-decoration: underline;
+.container > footer p {
+    text-align: center;
 }
 
 
-/* ---------------------------------------- */
-/* -----| CONTENT |------------------------ */
-/* ---------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -----| MISCELLANEOUS |---------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
-#content {
-    font-size: .8em;
-	padding: 10px;
+.phlakGreen {
+    color: #9C3;
 }
-
-#page-title {
-	color: #9C3;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.35em;
-	letter-spacing: .25px;
-}
-
-
-/* ---------------------------------------- */
-/* -----| FOOTER |------------------------- */
-/* ---------------------------------------- */
-
-
-* {margin:0;padding:0;}
-html, body, #wrap {height: 100%;}
-body > #wrap {height: auto; min-height: 100%;}
-
-#main {
-    padding-bottom: 36px;       /* must be same height as the footer */
-}
-
-#footer {
-    position: relative;
-    margin-top: -36px;          /* negative value of footer height */
-    min-width: 960px;
-    height: 36px;
-    clear:both;
-}
-
-#footer {
-	background-color: #363636;
-	font-size: .7em;
-}
-
-#footer .floatLeft, #footer .floatRight {
-	margin: 11px;
-}
-
-
-/* ---------------------------------------- */
-/* -----| MISCELLANEOUS |------------------ */
-/* ---------------------------------------- */
-
-.green {
-	color: #9C3;
-}
-
-#fork-me {
-	right: 0;
-	position: absolute;
-	top: 0;
-}
-	
-	
