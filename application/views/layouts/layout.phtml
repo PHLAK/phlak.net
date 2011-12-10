@@ -8,11 +8,18 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <? if($this->css): ?>
-        <link rel="stylesheet" type="text/css" href="<?= $this->css; ?>" />
+        <? foreach ($this->css as $css): ?>
+            <link rel="stylesheet" type="text/css" href="<?= $css; ?>" />
+        <? endforeach; ?>
     <? endif; ?>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap/bootstrap-dropdown.js"></script>
+    <? if ($this->js): ?>
+        <? foreach ($this->js as $js): ?>
+            <script type="text/javascript" src="<?= $js; ?>"></script>
+        <? endforeach; ?>
+    <? endif; ?>
     
     <meta name="keywords" content="PHLAK, PHLAKNET, Chris Kankiewicz, Hacking, Code" />
 </head>
@@ -29,8 +36,8 @@
             <li class="dropdown  <?= $this->tab == 'tools' ? 'active' : false ?>">
                 <a href="#" class="dropdown-toggle">Toolbox</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Secure Password Generator</a></li>
-                    <li><a href="#">External IP Reporter</a></li>
+                    <li><a href="/tools/secure-password-generator">Secure Password Generator</a></li>
+                    <li><a href="/tools/external-ip">External IP Reporter</a></li>
                 </ul>
             </li>
             <li <?= $this->tab == 'gallery' ? 'class="active"' : false ?>><a href="#">Image Gallery</a></li>

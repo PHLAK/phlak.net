@@ -33,7 +33,7 @@ class ToolsController extends Zend_Controller_Action
     {
         $this->view->title = 'Secure Password Generator';
         
-        $this->view->js = 'passGen.js';
+        $this->view->js[] = '/js/bootstrap/bootstrap-twipsy.js';
     }
     
     public function securePasswordGeneratorPostAction()
