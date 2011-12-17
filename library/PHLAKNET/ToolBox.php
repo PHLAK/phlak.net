@@ -23,6 +23,15 @@ class PHLAKNET_ToolBox {
      */
     public function makeSalt($length, $strict = false, $charset = NULL) {
         
+        // Define character sets
+        $lowerAlpha = 'abcdefghijklmnopqrstuvwxyz';
+        $upperAlpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $numeric    = '0123456789';
+        $special    = '!@#$%^&*()-_=+.?';
+        $extra      = '{}[]<>:;/\|~';
+        
+        $allChars   = $lowerAlpha . $upperAlpha . $numeric . $special . $extra;
+        
         // Define possible characters
         if (is_string($charset)) {
             
@@ -36,33 +45,33 @@ class PHLAKNET_ToolBox {
 
             // Lower case alpha characters
             if ( in_array('lower', $charset) ) {
-                $chars .= 'abcdefghijklmnopqrstuvwxyz';
+                $chars .= $lowerAlpha;
             }
             
             // Upper case alpha characters
             if ( in_array('upper', $charset) ) {
-                $chars .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                $chars .= $upperAlpha;
             }
             
             // All numbers
             if ( in_array('num', $charset) ) {
-                $chars .= '0123456789';
+                $chars .= $numeric;
             }
             
             // Special characters
             if ( in_array('special', $charset) ) {
-                $chars .= '!@#$%^&*()-_=+.?';
+                $chars .= $special;
             }
             
             // Uncommon extra characters
             if ( in_array('extra', $charset) ) {
-                $chars .= '{}[]<>:;/\|~';
+                $chars .= $extra;
             }
             
         } else {
             
             // All possible characters
-            $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+.?{}[]<>:;/\|~';
+            $chars = $allChars;
             
         }
         
@@ -96,6 +105,19 @@ class PHLAKNET_ToolBox {
         
         // Return the salt
         return $salt;
+        
+    }
+
+    /**
+     * Return the users connecting IP address.
+     * 
+     * @return string Connecting IP address
+     * @access public
+     */
+    public function getRemoteAddress() {
+        
+        // Return the users connecting IP address
+        return $_SERVER['REMOTE_ADDR'];
         
     }
     
