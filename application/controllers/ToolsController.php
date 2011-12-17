@@ -46,6 +46,10 @@ class ToolsController extends Zend_Controller_Action
         $strict  = (bool) trim($_POST['strict']);
         $length  = (int) trim($_POST['length']);
         
+        if ($length > 99) {
+            $length = 99;
+        }
+        
         // Generate the random string
         $string = PHLAKNET_ToolBox::makeSalt($length, $strict, $charset);
         
