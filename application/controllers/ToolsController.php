@@ -40,12 +40,14 @@ class ToolsController extends Zend_Controller_Action
     {
         // Disable layout
         // $this->_helper->layout->disableLayout();
-        
+
         // Get the variables
-        $length = trim($_POST['length']);
+        $charset = (array) $_POST['charset'];
+        $strict  = (bool) trim($_POST['strict']);
+        $length  = (int) trim($_POST['length']);
         
         // Generate the random string
-        $string = PHLAKNET_ToolBox::makeSalt($length, true);
+        $string = PHLAKNET_ToolBox::makeSalt($length, $strict, $charset);
         
         // Return the string
         die($string);

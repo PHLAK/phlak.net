@@ -35,27 +35,27 @@ class PHLAKNET_ToolBox {
             $chars = NULL;
 
             // Lower case alpha characters
-            if ( isset($charset['lower']) ) {
+            if ( in_array('lower', $charset) ) {
                 $chars .= 'abcdefghijklmnopqrstuvwxyz';
             }
             
             // Upper case alpha characters
-            if ( isset($charset['upper']) ) {
+            if ( in_array('upper', $charset) ) {
                 $chars .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
             }
             
             // All numbers
-            if ( isset($charset['num']) ) {
+            if ( in_array('num', $charset) ) {
                 $chars .= '0123456789';
             }
             
             // Special characters
-            if ( isset($charset['special']) ) {
+            if ( in_array('special', $charset) ) {
                 $chars .= '!@#$%^&*()-_=+.?';
             }
             
             // Uncommon extra characters
-            if ( isset($charset['extra']) ) {
+            if ( in_array('extra', $charset) ) {
                 $chars .= '{}[]<>:;/\|~';
             }
             
