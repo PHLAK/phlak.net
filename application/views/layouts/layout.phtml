@@ -21,55 +21,34 @@
         <? endforeach; ?>
     <? endif; ?>
     
-    <meta name="keywords" content="PHLAK, PHLAKNET, Chris Kankiewicz, Hacking, Code" />
+    <meta name="keywords" content="phlak, phlaknet, chris kankiewicz, gaming, streaming, pew pew" />
 </head>
 
 <body>
     
-    <div class="topbar" data-dropdown="dropdown">
-      <div class="fill">
-          
+    <div id="header" class="navbar navbar-fixed-top">
         <div class="container">
-          <a class="brand" href="#"><span class="phlakGreen">PHLAK</span>NET</a>
-          <ul class="nav">
-            <li <?= $this->tab == 'home' ? 'class="active"' : false ?>><a href="/">Home</a></li>
-            <li class="dropdown  <?= $this->tab == 'tools' ? 'active' : false ?>">
-                <a href="#" class="dropdown-toggle">Toolbox</a>
-                <ul class="dropdown-menu">
-                    <li><a href="/tools/secure-password-generator">Secure Password Generator</a></li>
-                    <li><a href="/tools/external-ip">External IP Reporter</a></li>
-                </ul>
-            </li>
-            <li <?= $this->tab == 'gallery' ? 'class="active"' : false ?>><a href="#">Image Gallery</a></li>
-          </ul>
+            
+            <a id="siteTitle" href="/">
+                <span class="phlakGreen">PHLAK</span>NET
+            </a>
+            
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            
         </div>
-        
-      </div>
     </div>
-
-
+    
     <div class="container">
+        
+        <?= $this->layout()->content; ?>
 
-        <div class="content">
-            
-            <div class="page-header">
-                <h1>
-                    <?= $this->title; ?>
-                    <?php if ($this->subtitle): ?>
-                        <small><?= $this->subtitle; ?></small>
-                    <?php endif; ?>
-                </h1>
-            </div>
-            
-            <h1 id="page-title"></h1>
-            
-            <?= $this->layout()->content; ?>
-            
-        </div>
-
-        <footer>
+        <div class="footer">
             <p>&copy; <?= date('Y'); ?> <a href="http://www.chriskankiewicz.com">Chris Kankiewicz</a></p>
-        </footer>
+        </div>
     
     </div>
     
