@@ -41,6 +41,43 @@ a:hover {
 
 
 /* -------------------------------------------------------------------------- */
+/* -----| NAVIGATION |------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#navigation {
+    bottom: 0;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+}
+
+#navigation li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin-right:8px;
+}
+
+#navigation li a {
+    background-color: #212121;
+    color: #EEE;
+    display: block;
+    font-family: monospace;
+    font-size: 1.1em;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+#navigation li a:hover {
+    background-color: #121212;
+}
+
+#navigation li a.currentPage {
+    background-color: #9C3;
+    color: #222;
+}
+
+/* -------------------------------------------------------------------------- */
 /* -----| CONTENT |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
@@ -51,14 +88,15 @@ a:hover {
 }
 
 #infoPane h3 {
-    border-bottom: 1px dotted #EEE;
-    font-size: 1.2em;
+    color: #9C3;
+    font-family: monospace;
+    font-size: 1.1em;
     padding: 0;
-    margin-bottom: 10px;
 }
 
 #infoPane p, #infoPane ul {
     font-size: .95em;
+    margin-bottom: 1em;
     text-align: justify;
 }
 
