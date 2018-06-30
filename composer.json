@@ -1,0 +1,31 @@
+{
+    "name": "PHLAK.net",
+    "description": "The PHLAK homepage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Kankiewicz",
+            "email": "Chris@ChrisKankiewicz.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/PHLAK/phlak.net/issues"
+    },
+    "require": {
+        "php": ">=7.0",
+        "slim/php-view": "^2.2",
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.4",
+        "tightenco/collect": "^5.6",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": ["app/Support/helpers.php"]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
