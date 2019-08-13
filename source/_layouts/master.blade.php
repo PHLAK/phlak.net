@@ -7,6 +7,6 @@
 
 <title>PHLAKNET</title>
 
-<div id="app">
+<div id="app" class="bg-phlak-gray">
     @yield('content')
 </div>
