@@ -1,0 +1,21 @@
+[build]
+  command = 'npm run production && vendor/bin/jigsaw build production'
+  publish = 'build_production'
+
+[[redirects]]
+  from = 'http://phlak.netlify.com/*'
+  to = 'https://www.phlak.net/:splat'
+  status = 301
+  force = true
+
+[[redirects]]
+  from = 'https://phlak.netlify.com/*'
+  to = 'https://www.phlak.net/:splat'
+  status = 301
+  force = true
+
+[[redirects]]
+  from = 'http://www.phlak.net/*'
+  to = 'https://www.phlak.net/:splat'
+  status = 301
+  force = true
