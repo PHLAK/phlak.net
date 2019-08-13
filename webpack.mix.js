@@ -24,5 +24,6 @@ mix.sass('source/_assets/sass/main.scss', 'css').options({
 }).version();
 
 mix.purgeCss({
-    folders: ['source']
+    folders: ['source'],
+    whitelist: ['html', 'body', 'main']
 });
