@@ -3,9 +3,7 @@
 /build_production/
 /cache/
 /node_modules/
-/source/assets/build/css/
-/source/assets/build/fonts/
-/source/assets/build/js/
+/source/assets/build/
 /vendor/
 /.idea/
 /.vscode/
