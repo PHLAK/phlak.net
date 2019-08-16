@@ -19,3 +19,9 @@
   to = 'https://www.phlak.net/:splat'
   status = 301
   force = true
+
+[[redirects]]
+  from = 'http://phlak.dev/*'
+  to = 'https://www.phlak.dev/:splat'
+  status = 301
+  force = true
