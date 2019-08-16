@@ -2,9 +2,7 @@
 
 @section('content')
     <div class="flex content-center items-center justify-center h-screen w-full p-4">
-        <span id="phlak" class="text-pink-600">
-            PHLAK
-        </span>
+        <img src="assets/images/PHLAK.svg" alt="PHLAK">
     </div>
 
     <div class="absolute text-gray-700 text-xs bottom-0 right-0 p-4">
