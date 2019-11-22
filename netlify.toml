@@ -25,3 +25,28 @@
   to = 'https://www.phlak.dev/:splat'
   status = 301
   force = true
+
+# Project Redirects
+[[redirects]]
+  from = 'https://www.phlak.dev/config'
+  to = 'https://github.com/PHLAK/Config'
+  status = 301
+  force = true
+
+[[redirects]]
+  from = 'https://www.phlak.dev/semver'
+  to = 'https://github.com/PHLAK/SemVer'
+  status = 301
+  force = true
+
+[[redirects]]
+  from = 'https://www.phlak.dev/stash'
+  to = 'https://github.com/PHLAK/Stash'
+  status = 301
+  force = true
+
+[[redirects]]
+  from = 'https://www.phlak.dev/twine'
+  to = 'https://twine.phlak.net'
+  status = 301
+  force = true
