@@ -28,6 +28,12 @@
 
 # Project Redirects
 [[redirects]]
+  from = 'https://www.phlak.dev/colorizer'
+  to = 'https://github.com/PHLAK/colorizer'
+  status = 301
+  force = true
+
+[[redirects]]
   from = 'https://www.phlak.dev/config'
   to = 'https://github.com/PHLAK/Config'
   status = 301
@@ -42,6 +48,12 @@
 [[redirects]]
   from = 'https://www.phlak.dev/stash'
   to = 'https://github.com/PHLAK/Stash'
+  status = 301
+  force = true
+
+[[redirects]]
+  from = 'https://www.phlak.dev/strgen'
+  to = 'https://github.com/PHLAK/strgen'
   status = 301
   force = true
 
