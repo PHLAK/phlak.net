@@ -28,6 +28,18 @@
 
 # Project Redirects
 [[redirects]]
+  from = 'https://www.phlak.dev/cafelias'
+  to = 'https://github.com/PHLAK/Cafelias'
+  status = 301
+  force = true
+
+[[redirects]]
+  from = 'https://www.phlak.dev/chronometer'
+  to = 'https://github.com/PHLAK/Chronometer'
+  status = 301
+  force = true
+
+[[redirects]]
   from = 'https://www.phlak.dev/colorizer'
   to = 'https://github.com/PHLAK/colorizer'
   status = 301
