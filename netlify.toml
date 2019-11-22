@@ -3,26 +3,14 @@
   publish = 'build_production'
 
 [[redirects]]
-  from = 'http://phlak.netlify.com/*'
-  to = 'https://www.phlak.net/:splat'
+  from = 'http://*'
+  to = 'https://:splat'
   status = 301
   force = true
 
 [[redirects]]
-  from = 'https://phlak.netlify.com/*'
+  from = 'phlak.netlify.com/*'
   to = 'https://www.phlak.net/:splat'
-  status = 301
-  force = true
-
-[[redirects]]
-  from = 'http://www.phlak.net/*'
-  to = 'https://www.phlak.net/:splat'
-  status = 301
-  force = true
-
-[[redirects]]
-  from = 'http://phlak.dev/*'
-  to = 'https://www.phlak.dev/:splat'
   status = 301
   force = true
 
