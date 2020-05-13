@@ -1,4 +1,8 @@
 module.exports = {
+    purge: [
+        'source/**/*.js',
+        'source/**/*.php'
+    ],
     theme: {
         extend: {
             colors: {
