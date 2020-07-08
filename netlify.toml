@@ -61,6 +61,12 @@
   force = true
 
 [[redirects]]
+  from = 'https://www.phlak.dev/splat'
+  to = 'https://github.com/PHLAK/Splat'
+  status = 301
+  force = true
+
+[[redirects]]
   from = 'https://www.phlak.dev/stash'
   to = 'https://github.com/PHLAK/Stash'
   status = 301
