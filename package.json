@@ -20,6 +20,6 @@
         "sass-loader": "^10.1.0",
         "tailwindcss": "^1.9.6",
         "vue-template-compiler": "^2.6.12",
-        "yargs": "^16.1.0"
+        "yargs": "^16.2.0"
     }
 }
