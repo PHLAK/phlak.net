@@ -17,7 +17,7 @@
         "laravel-mix": "^6.0.16",
         "node-cmd": "^4.0.0",
         "sass": "^1.32.8",
-        "sass-loader": "^11.0.1",
+        "sass-loader": "^12.1.0",
         "tailwindcss": "^1.9.6",
         "vue-template-compiler": "^2.6.12",
         "yargs": "^16.2.0"
