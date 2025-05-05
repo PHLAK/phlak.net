@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
     background-color: #070415;
@@ -10,4 +8,8 @@ body {
 
 #phlak {
     filter: drop-shadow(0 0 75px hsla(10, 100%, 66.6%, .66));
+}
+
+.icon {
+    @apply size-12 fill-white/25 transition duration-200 sm:size-16 hover:fill-white/90 hover:drop-shadow-lg hover:drop-shadow-rose-500;
 }
