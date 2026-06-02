@@ -1,8 +1,12 @@
 version: 2
 
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: monthly
-  assignees: [PHLAK]
+  - package-ecosystem: npm
+    directory: /
+    groups:
+      javascript-minor-and-patch:
+        patterns: ['*']
+        update-types: [minor, patch]
+    schedule:
+      interval: monthly
+    assignees: [PHLAK]
